@@ -3,7 +3,7 @@ import { PromptTemplate, type PromptTemplateInput } from 'langchain/prompts';
 import { LLMChain, type LLMChainInput } from 'langchain/chains';
 
 const openAIInput: Partial<OpenAIInput> = {
-    openAIApiKey: process.env.OPENAI_API_KEY || `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`, 
+    openAIApiKey: process.env.OPENAI_API_KEY
 }
 
 const model =  new OpenAI(openAIInput);
