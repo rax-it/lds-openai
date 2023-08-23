@@ -1,0 +1,21 @@
+{
+  "name": "lds-openai",
+  "version": "1.0.0",
+  "description": "Dump of hackthon project to try various openai APIs with lds/",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "langchain": "^0.0.132",
+    "openai": "^4.1.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "type": "module"
+}

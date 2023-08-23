@@ -1,0 +1,10 @@
+# Tools artifacts
+node_modules
+
+# Environment
+.env
+
+# Training Data files
+training.jsonl
+
+dist
