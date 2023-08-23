@@ -1,0 +1,15 @@
+#%RAML 1.0 Overlay
+title: Overlay
+extends: ./base.raml
+
+uses:
+  luvio: luvio://annotations.raml
+
+(luvio.keyPrefix): 'prefix'
+(luvio.ttl): 0
+
+/test-entity:
+  /{id}:
+    get:
+      (luvio.adapter):
+        name: getTestEntity
