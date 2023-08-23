@@ -123,11 +123,12 @@ jobs:
 
             Specify the time-to-live of individual types using the same (luvio.ttl) annotation but placed on the type.
 
-            The example sets a default time-to-live of 60,000 milliseconds, and the Todo type time-to-live is set as 30,000 milliseconds.
-            Note that time-to-live should always be more that 0, this gives our engine the time to store and read data correctly from cache, the minimum value of time-to-live should be 200ms.
+            The example sets a default time-to-live of 30,000 milliseconds, and the Todo type time-to-live is set as 30,000 milliseconds.
+            Note, that time-to-live or (luvio.ttl) should never be zero (0), this gives our engine the time to store and read data correctly from cache,
+            the minimum suggested value of time-to-live or (luvio.ttl) should >=200 milliseconds
 
-            (luvio.ttl): 60000
-
+            Example RAML: 
+                
             types:
               Todo:
                 (luvio.key):
